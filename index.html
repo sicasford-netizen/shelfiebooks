@@ -330,12 +330,19 @@ footer{background:var(--forest-deep);color:#9DB3A2;padding:38px 24px;font-size:.
 .foot .fm img{width:26px;height:26px;border-radius:6px}
 
 @media (max-width:840px){
-  .hero-inner{grid-template-columns:1fr;padding-top:60px}
-  .shelf-stage{height:230px;justify-content:center}
-  .s1{height:170px}.s2{height:150px}.s3{height:185px}.s4{height:160px}
-  .s5{height:140px}.s6{height:178px}
+  body{overflow-x:hidden}
+  .hero-inner{grid-template-columns:1fr;padding-top:60px;overflow:hidden}
+  .hero h1{font-size:2.4rem}
+  .hero p.lede{font-size:1rem;max-width:100%}
+  .shelf-wrap{display:none}
+  .signup{flex-direction:column;gap:12px}
+  .signup input{min-width:unset;width:100%}
+  .signup .btn{width:100%;text-align:center}
   .feature-grid,.shelf-cards{grid-template-columns:1fr}
   .nav-links{display:none}
+  .phones{flex-direction:column;align-items:center}
+  .foot{flex-direction:column;text-align:center;gap:12px}
+  .foot a{margin-left:0;margin-right:12px}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none!important;animation:none!important}
